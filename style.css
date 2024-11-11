@@ -15,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333;
+  background: #000080;
   padding: 10px 0;
   text-align: center;
 }
@@ -49,7 +49,22 @@ body {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
 
+.hacker-image {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.9);
+    transition: transform 0.3s ease;
+}
 /* Projects Section */
 #projects {
   padding: 2rem;
@@ -77,7 +92,120 @@ body {
 footer {
   padding: 1rem;
   text-align: center;
-  background: #333;
+  background: #800000;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  #navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000080;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Welcome Section */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+.hacker-image {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.9);
+    transition: transform 0.3s ease;
+}
+/* Projects Section */
+#projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+.project-tile {
+  background: #ddd;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.project-tile h3 {
+  font-size: 1.2rem;
+}
+
+.project-tile a {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #800000;
 }
 
 footer a {
